@@ -4,6 +4,8 @@ import Router from 'vue-router'
 //import Index from '@/views/index/index'
 import Index from '@/page/index'
 import UiElements from '@/page/ui-elements'
+import Charts from '@/page/charts'
+import TodoList from '@/page/todolist'
 
 Vue.use(Router)
 
@@ -28,6 +30,16 @@ export default new Router({
       path: '/ui-elements',
       name: 'UiElements',
       component: UiElements
+    },
+    {
+      path: '/charts',
+      name: 'Charts',
+      component: Charts
+    },
+    {
+      path: '/todolist',
+      name: 'TodoList',
+      component: TodoList
     }
   ]
 })

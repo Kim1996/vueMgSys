@@ -1,7 +1,7 @@
 <template>
     <div >   
         <head-nav></head-nav>
-        <side-nav :curIdside="1"></side-nav>
+        <side-nav :curIdside="3"></side-nav>
         <div id="page-wrapper">   
             <content-cell :title="titleName"></content-cell>
         </div>
@@ -21,7 +21,7 @@
         },
         data(){
             return{
-                titleName:'UI Elements'
+                titleName:'TodoList'
             }
         }
     }

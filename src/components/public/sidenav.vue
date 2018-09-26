@@ -2,22 +2,21 @@
     <nav class="navbar-default navbar-side" role="navigation">
     <div class="sidebar-collapse">
         <ul class="nav" id="main-menu">
-            <li>
-                <a class="active-menu" href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a>
-            </li>
-            <li>
-                <a href="/ui-elements"><i class="fa fa-desktop"></i> UI Elements</a>
-            </li>
-            <li>
-                <a href="chart.html"><i class="fa fa-bar-chart-o"></i> Charts</a>
-            </li>
+            <router-link to="/" tag="li">
+                <a href="javaScript;;" @click="curId=0" :class="{'active-menu': curId == 0}"><i class="fa fa-dashboard"></i> Dashboard</a>
+            </router-link>
+            <router-link to="/ui-elements" tag="li">
+                <a href="javaScript;;" @click="curId=1" :class="{'active-menu': curId == 1}"><i class="fa fa-desktop"></i> UI Elements</a>
+            </router-link>
+             <router-link to="/charts" tag="li">
+                <a href="javaScript;;" @click="curId=2" :class="{'active-menu': curId == 2}"><i class="fa fa-bar-chart-o"></i> Charts</a>
+            </router-link>
+            <router-link to="/todolist" tag="li">
+                <a href="javaScript;;" @click="curId=3" :class="{'active-menu': curId == 3}"><i class="fa fa-table"></i> TodoList</a>
+            </router-link>
             <li>
                 <a href="tab-panel.html"><i class="fa fa-qrcode"></i> Tabs &amp; Panels</a>
-            </li>
-            
-            <li>
-                <a href="table.html"><i class="fa fa-table"></i> Responsive Tables</a>
-            </li>
+            </li>     
             <li>
                 <a href="form.html"><i class="fa fa-edit"></i> Forms </a>
             </li>
@@ -62,6 +61,17 @@
     </div>
     </nav>
 </template>
+
+<script>
+export default {
+    props:['curIdside'],
+    data(){
+        return{
+            curId:this.curIdside,
+        }
+    }
+}
+</script>
 
 <style scoped>
 </style>

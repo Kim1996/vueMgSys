@@ -1,8 +1,10 @@
 <template>
     <div >   
         <head-nav></head-nav>
-        <side-nav></side-nav>
-        <content-cell :title="titleName"></content-cell>
+        <side-nav :curIdside="0"></side-nav>
+        <div id="page-wrapper">   
+            <content-cell :title="titleName"></content-cell>
+        </div>
        <!--  <img src="@/assets/logo.png"> -->
 
     </div>
