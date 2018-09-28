@@ -10,7 +10,7 @@
                         <!-- Advanced Tables -->
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                Advanced Tables
+                                Shopping Cart Table
                             </div>
                             <div class="panel-body">
                                 <shopping-cart></shopping-cart>
@@ -21,7 +21,7 @@
                 </div>    
             </div>
         </div>
-       <!--  <img src="@/assets/logo.png"> -->
+        <!--  <img src="@/assets/logo.png"> -->
 
     </div>
 </template>
@@ -31,7 +31,6 @@
     import SideNav from '@/components/public/sidenav.vue'
     import ContentCell from '@/components/item/content.vue'
     import ShoppingCart from '@/components/table/shopping-cart.vue'
-
 
     export default {
         components:{

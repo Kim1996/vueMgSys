@@ -32,8 +32,17 @@
 </template>
 
 <script>
-export default {
-    
-}
+    //import scartdata from '/static/date/shoppingcartDate.json'
+
+    export default {
+        data(){
+    　　    return{
+    　　　     userinform: ''
+    　　　 }
+        },
+        mounted(){
+            //this.userinform = scartdata
+        }
+    }
 </script>
 
