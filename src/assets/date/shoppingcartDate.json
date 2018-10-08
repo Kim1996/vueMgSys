@@ -1,0 +1,25 @@
+[{
+    "name":"thing1",
+    "number":5,
+    "price":20,
+    "sum":0,
+    "action":"delete"
+},{
+    "name":"thing2",
+    "number":6,
+    "price":100,
+    "sum":0,
+    "action":"delete"
+},{
+    "name":"thing3",
+    "number":7,
+    "price":50,
+    "sum":0,
+    "action":"delete"
+},{
+    "name":"thing4",
+    "number":2,
+    "price":2000,
+    "sum":0,
+    "action":"delete"
+}]
