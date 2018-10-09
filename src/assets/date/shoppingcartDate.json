@@ -6,20 +6,20 @@
     "action":"delete"
 },{
     "name":"thing2",
-    "number":6,
-    "price":100,
+    "number":10,
+    "price":1000,
     "sum":0,
     "action":"delete"
 },{
     "name":"thing3",
-    "number":7,
+    "number":99,
     "price":50,
     "sum":0,
     "action":"delete"
 },{
     "name":"thing4",
-    "number":2,
-    "price":2000,
+    "number":200,
+    "price":2,
     "sum":0,
     "action":"delete"
 }]

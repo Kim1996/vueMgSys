@@ -30,7 +30,7 @@
     import HeadNav from '@/components/public/headnav.vue'
     import SideNav from '@/components/public/sidenav.vue'
     import ContentCell from '@/components/item/content.vue'
-    import ShoppingCart from '@/components/table/shopping-cart.vue'
+    import ShoppingCart from '@/components/item/table/shopping-cart.vue'
 
     export default {
         components:{

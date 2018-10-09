@@ -12,7 +12,7 @@
                 <a href="javaScript;;" @click="curId=2" :class="{'active-menu': curId == 2}"><i class="fa fa-bar-chart-o"></i> Charts</a>
             </router-link>
             <router-link to="/todolist" tag="li">
-                <a href="javaScript;;" @click="curId=3" :class="{'active-menu': curId == 3}"><i class="fa fa-table"></i> TodoList</a>
+                <a href="javaScript;;" @click="curId=3" :class="{'active-menu': curId == 3}"><i class="fa fa-list-ol"></i> TodoList</a>
             </router-link>
             <li>
                 <a href="tab-panel.html"><i class="fa fa-qrcode"></i> Tabs &amp; Panels</a>
