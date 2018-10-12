@@ -5,13 +5,13 @@
             <router-link to="/" tag="li">
                 <a href="javaScript;;" @click="curId=0" :class="{'active-menu': curId == 0}"><i class="fa fa-dashboard"></i> Dashboard</a>
             </router-link>
-            <router-link to="/ui-elements" tag="li">
+            <router-link to="/manageSys/ui-elements" tag="li">
                 <a href="javaScript;;" @click="curId=1" :class="{'active-menu': curId == 1}"><i class="fa fa-desktop"></i> UI Elements</a>
             </router-link>
-             <router-link to="/charts" tag="li">
+             <router-link to="/manageSys/charts" tag="li">
                 <a href="javaScript;;" @click="curId=2" :class="{'active-menu': curId == 2}"><i class="fa fa-bar-chart-o"></i> Charts</a>
             </router-link>
-            <router-link to="/todolist" tag="li">
+            <router-link to="/manageSys/todolist" tag="li">
                 <a href="javaScript;;" @click="curId=3" :class="{'active-menu': curId == 3}"><i class="fa fa-list-ol"></i> TodoList</a>
             </router-link>
             <li>
@@ -74,4 +74,11 @@ export default {
 </script>
 
 <style scoped>
+    .active-menu{
+        color:#5178E1!important;
+    }
+
+    .active-menu i{
+        color:#5178E1!important;
+    }
 </style>

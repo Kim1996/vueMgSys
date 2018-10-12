@@ -9,16 +9,12 @@
                     <div class="col-md-12">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                A new message Item
+                                A new Item
                             </div>
                             <div class="panel-body">
                                 <div class="form-group">
                                     <label>Please Input your item</label>
                                     <input class="form-control" placeholder="Finish then enter text">
-                                </div>
-                                <div class="form-group">
-                                    <label>And with some tips?</label>
-                                    <textarea class="form-control" rows="3" placeholder="Just here...Finish then enter text, too"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -28,7 +24,7 @@
                     <div class="col-md-12">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                MessageItem
+                                Todolist
                             </div>
                             
                             <div class="panel-body">
@@ -43,8 +39,8 @@
 </template>
 
 <script>
-    import HeadNav from '@/components/public/headnav.vue'
-    import SideNav from '@/components/public/sidenav.vue'
+    import HeadNav from '@/components/public/pc/headnav.vue'
+    import SideNav from '@/components/public/pc/sidenav.vue'
     import ContentCell from '@/components/item/content.vue'
     import MessageList from '@/components/item/message-list.vue'
 

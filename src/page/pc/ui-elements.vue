@@ -11,8 +11,8 @@
 </template>
 
 <script>
-    import HeadNav from '@/components/public/headnav.vue'
-    import SideNav from '@/components/public/sidenav.vue'
+    import HeadNav from '@/components/public/pc/headnav.vue'
+    import SideNav from '@/components/public/pc/sidenav.vue'
     import ContentCell from '@/components/item/content.vue'
 
     export default {

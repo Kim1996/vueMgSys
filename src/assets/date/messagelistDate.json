@@ -1,13 +1,9 @@
 [{
-    "event":"thing1",
-    "tips":"notice"
+    "event":"thing1"
 },{
-    "event":"thing1",
-    "tips":"notice"
+    "event":"thing2"
 },{
-    "event":"thing1",
-    "tips":"notice"
+    "event":"thing3"
 },{
-    "event":"thing1",
-    "tips":"notice"
+    "event":"thing4"
 }]

@@ -1,75 +1,82 @@
 <template>
     <div>
+        <div><span>共有 4 个目标，已完成 3 个，还有 1 个未完成</span></div>
+        <br>
         <ul class="nav nav-tabs">
-            <li class="active"><a href="#home" data-toggle="tab">All</a>
+            <li @click="tabId=0" :class="{'active': tabId == 0}" >
+                <a>All</a>
             </li>
-            <li class=""><a href="#profile" data-toggle="tab">Success</a>
+            <li @click="tabId=1" :class="{'active': tabId == 1}">
+                <a>Success</a>
             </li>
-            <li class=""><a href="#messages" data-toggle="tab">Waiting</a>
+            <li @click="tabId=2" :class="{'active': tabId == 2}">
+                <a>Waiting</a>
             </li>
-            <li class=""><a href="#settings" data-toggle="tab">Settings</a>
+            <li @click="tabId=3" :class="{'active': tabId == 3}">
+                <a>Settings</a>
             </li>
         </ul>
 
         <div class="tab-content">
-            <div class="tab-pane fade active in" id="home">
-                <h4>All items</h4>
-                <div >
-                            <div class="panel-group" id="accordion">
-                                <div class="panel panel-default">                                   
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapsed" aria-expanded="false">Collapsible Group Item #1</a>
-                                        </h4>
-
-                                    </div>
-                                    
-                                    <div id="collapseOne" class="panel-collapse collapse" style="height: 0px;" aria-expanded="false">
-                                        <div class="panel-body" >
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" class="collapsed">Collapsible Group Item #2</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseTwo" class="panel-collapse collapse" style="height: 0px;" aria-expanded="false">
-                                        <div class="panel-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-default">
-                                    <div class="panel-heading">
-                                        <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed" aria-expanded="false">Collapsible Group Item #3</a>
-                                        </h4>
-                                    </div>
-                                    <div id="collapseThree" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
-                                        <div class="panel-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <div v-show="tabId == 0" :class="{'tab-pane fade active in': tabId == 0}" >
+                <h4>All Tab</h4>
+                <div class="form-group"  v-for="item in msglistdatas" :key="item">                
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="">{{item.event}}
+                        </label>
+                    </div>                   
+                </div>      
             </div>
-            <div class="tab-pane fade" id="profile">
-                <h4>Profile Tab</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div v-show="tabId == 1" :class="{'tab-pane fade active in': tabId == 1}" >
+                <h4>Success Tab</h4>
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="">Checkbox 1
+                        </label>
+                    </div>
+                </div>
             </div>
-            <div class="tab-pane fade" id="messages">
-                <h4>Messages Tab</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div v-show="tabId == 2" :class="{'tab-pane fade active in': tabId == 2}" >
+                <h4>Waiting Tab</h4>
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="">Checkbox 2
+                        </label>
+                    </div>
+                </div>
             </div>
-            <div class="tab-pane fade" id="settings">
+            <div v-show="tabId == 3" :class="{'tab-pane fade active in': tabId == 3}" >
                 <h4>Settings Tab</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" value="">Checkbox 3
+                        </label>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
 </template>
+
+<script>
+    import msglistdata from '@/assets/date/messagelistDate.json'
+
+    export default {
+        data(){
+            return{
+                tabId:0,
+                msglistdatas:'',
+            }
+        },
+        mounted: function (){  
+            console.log(msglistdata);   
+            this.msglistdatas = msglistdata;
+
+        },
+    }
+</script>

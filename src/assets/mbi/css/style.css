@@ -1,0 +1,36 @@
+body{
+    background: #fff;
+}
+
+
+/* btn */
+.btnCon{
+    width:100%;
+    padding:1rem 2.5rem;
+    text-align: center;
+}
+
+.btn-stroke{
+    width:100%;
+    color:#6E33D5;
+    font-weight: 600;
+    padding:0.7rem 0;
+    background:#FFF;
+    border:2px solid #5178E1;
+    border-radius: 25rem;
+    /* border-image: linear-gradient(90deg, #5178E1 , #663DDB) 1 1; */
+    
+}
+
+.btn-filled{
+    width:100%;
+    color:#fff;
+    font-weight: 600;
+    padding:0.7rem 0;
+    background: -webkit-linear-gradient(left, #5178E1 , #6E33D5); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #5178E1, #6E33D5); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #5178E1, #6E33D5); /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #5178E1 , #6E33D5); /* 标准的语法 */
+    border:none;
+    border-radius: 25rem;
+}

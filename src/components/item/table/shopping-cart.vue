@@ -19,7 +19,16 @@
                 <td >
                     <span class="check-span" @click="items.select=!items.select" :class="{'check-true':items.select}"></span>
                 </td>
-                <td>{{items.name}}</td>
+                <td>
+                    <div class="box_fa fa_shang">
+                        <div class="box_ch ch_shang">
+                            <img src="@/assets/logo.png" style="width:80px;border:1px solid #ccc;">
+                        </div>
+                        <div class="box_ch ch_shang">{{items.name}}</div>
+                    </div>
+                    
+                    
+                </td>
                 <td>
                     <div class="box_fa">
                         <div class="box_ch box_br" @click="items.number--"><i  class="fa fa-caret-left"></i> </div>
@@ -167,5 +176,21 @@
     .box_cr{
         background: #c1c1c1;
     }
+
+    .fa_shang{
+        height:80px;
+        width:160px;
+        line-height: none;
+        border:none;
+    }
+    .ch_shang{
+        width:80px;
+        white-space:normal;
+        word-break:break-all;
+        word-wrap:break-word; 
+        line-height: 1;
+    }
+
+    
     
 </style>
