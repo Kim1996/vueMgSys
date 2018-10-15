@@ -1,7 +1,9 @@
-body{
+.page{
+    position: absolute;
+    width:100%;
+    height:100%;
     background: #fff;
 }
-
 
 /* btn */
 .btnCon{
@@ -33,4 +35,37 @@ body{
     background: linear-gradient(to right, #5178E1 , #6E33D5); /* 标准的语法 */
     border:none;
     border-radius: 25rem;
+}
+
+/* input */
+.inputCon{
+    width:100%;
+    padding:1rem 2.5rem;
+    text-align: center;
+}
+
+
+.input-sign{
+    width:100%;
+    color:#fff;
+    padding:0.8rem 10px;
+    border:none;
+    border-bottom:1px solid #fff;
+    background-color:rgba(255,255,255,0);
+}
+
+.input-sign::-webkit-input-placeholder {
+    color: #fff;
+   }
+
+
+/* div */
+.signTit{
+    margin-top:30%;
+    width:100%;
+    text-align: left;
+    padding:4rem 2.5rem;
+    color: #fff;
+    font-size:16px;
+    font-weight: 600;
 }
